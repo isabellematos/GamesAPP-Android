@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GamesAPP</string>
+    <string name="Login">Login</string>
+    <string name="welcome">Welcome!</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="text">With our app it will be much easier and more fun to keep track of your games!</string>
+    <string name="remember">Remember me</string>
+    <string name="createaccount">Create an account</string>
+    <string name="signin">Sign in</string>
+    <string name="photo">Shall we choose a photo?</string>
+    <string name="authenticatio">Authentication Data</string>
+    <string name="personal">Personal data</string>
+    <string name="name">What is your name?</string>
+    <string name="city">What is your city?</string>
+    <string name="birth">What is your date of birth?</string>
+    <string name="gamerlevel">What is your gamer level?</string>
+    <string name="console">What is your favourite console?</string>
+    <string name="sex">Sex:</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+
+    <string-array name="dropdown">
+        <item>Playstation 5</item>
+        <item>Xbox One</item>
+        <item>Xbox 360</item>
+        <item>Nintendo Switch</item>
+        <item>Super Nintendo</item>
+        <item>Nintendo 64</item>
+        <item>Saga Saturn</item>
+    </string-array>
+
+    <string name="gamesfinished">Games Finished</string>
+    <string name="corrently">Currently Playing</string>
+    <string name="age">Age</string>
+</resources>
