@@ -95,7 +95,7 @@
             app:layout_constraintVertical_bias="0.491">
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/view_nome_usuario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="-70dp"
@@ -113,9 +113,9 @@
                 android:text="TextView"
                 android:textColor="#1976D2"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textView17"
-                app:layout_constraintStart_toStartOf="@+id/textView17"
-                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                app:layout_constraintEnd_toEndOf="@+id/view_nome_usuario"
+                app:layout_constraintStart_toStartOf="@+id/view_nome_usuario"
+                app:layout_constraintTop_toBottomOf="@+id/view_nome_usuario" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"

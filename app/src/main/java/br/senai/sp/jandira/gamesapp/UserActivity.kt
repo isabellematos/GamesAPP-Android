@@ -32,7 +32,7 @@ class UserActivity : AppCompatActivity() {
 
         //criar uma instancia do adapter
         adapterGames = GamesAdapter(this)
-        adapterGames.updatePontosTuristicosList(GamesDao.getGames(this))
+        adapterGames.updateGamesList(GamesDao.getGames(this))
 
         //Ligar o adapter a nossa recyclerView
         rvGames.adapter = adapterGames

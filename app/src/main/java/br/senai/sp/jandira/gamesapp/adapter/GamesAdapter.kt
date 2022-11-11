@@ -15,8 +15,8 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
 
         private var gamesList = listOf<Games>()
 
-        fun updatePontosTuristicosList(pontosTuristicos: List<Games>) {
-            this.gamesList = pontosTuristicos
+        fun updateGamesList(games: List<Games>) {
+            this.gamesList = games
             notifyDataSetChanged()
         }
 
