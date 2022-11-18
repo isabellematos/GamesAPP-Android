@@ -36,9 +36,9 @@ class UserAdapter(var userList: List<Usuario>, var context: Context):
         holder.textViewEmail.text = user.email
         holder.textViewCidade.text = user.cidade
         holder.textViewPassword.text = user.senha
-        holder.textViewDataNasc.text = user.dataNascimento
+        holder.textViewDataNasc.text = user.dataNascimento.toString()
 
-        holder.cardViewContact.setOnClickListener {
+        holder.cardViewGames.setOnClickListener {
             val intent = Intent(context, NewAccountActivity::class.java)
             intent.putExtra("id", user.id)
             context.startActivity(intent)
@@ -58,5 +58,6 @@ class UserAdapter(var userList: List<Usuario>, var context: Context):
         val textViewPassword: TextView = view.findViewById(R.id.edit_text_password)
         val textViewCidade: TextView = view.findViewById(R.id.edit_text_cidade)
         val textViewDataNasc: TextView = view.findViewById(R.id.edit_text_datebirth)
+        val cardViewGames: CardView = view.findViewById(R.id.cardView)
     }
 }

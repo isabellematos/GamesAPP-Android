@@ -8,10 +8,11 @@ import androidx.room.PrimaryKey
 import java.io.Console
 import java.time.LocalDate
 
+@Entity(tableName = "tbl_games")
 class Games {
     @PrimaryKey(autoGenerate = true)
     var codigo = 0
-    var imagem: Bitmap? = null
+  //  var imagem: Drawable? = null
     var nomeGame = ""
     var descricao = ""
     var marcaGame = ""

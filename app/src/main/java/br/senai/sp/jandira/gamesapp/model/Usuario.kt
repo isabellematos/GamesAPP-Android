@@ -1,6 +1,7 @@
 package br.senai.sp.jandira.gamesapp.model
 
 import android.graphics.Bitmap
+import android.graphics.drawable.Drawable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -17,10 +18,10 @@ class Usuario {
     var email = ""
     var senha = ""
     var cidade = ""
-    var dataNascimento: LocalDate? = null
+    var dataNascimento = ""
     var nivel = NiveisEnum.INICIANTE
-    var console: Console? = null
-    var foto: Bitmap? = null
+    //var console = Console
+    //var foto: Drawable? = null
     var sex = 'I'
 
 }
