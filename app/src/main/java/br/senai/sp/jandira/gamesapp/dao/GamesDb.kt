@@ -8,24 +8,21 @@ import br.senai.sp.jandira.gamesapp.model.Console
 import br.senai.sp.jandira.gamesapp.model.Games
 import br.senai.sp.jandira.gamesapp.model.Usuario
 
-@Database(entities = [Usuario::class, Games::class, Console::class], version = 1)
-abstract class GamesDb: RoomDatabase() {
-    abstract fun userDao():UserDao
+@Database(entities = [Games::class, Usuario::class, Console::class], version = 1)
+abstract class GamesDB: RoomDatabase() {
+
+    abstract fun gamesDao(context: Context): GamesDao
 
     companion object {
-        private lateinit var instance: GamesDb
 
-        fun getDataBase(context: Context): GamesDb{
-            if(!::instance.isInitialized) {
-                instance = Room.databaseBuilder(context,
-                    GamesDb::class.java, "db_games")
-                    .allowMainThreadQueries().build()
+        private lateinit var instace: GamesDB
 
+        fun getDatabase(context: Context):GamesDB{
+            if (!::instace.isInitialized){
+                instace = Room.databaseBuilder(context, GamesDB::class.java, "db_games").allowMainThreadQueries().build()
             }
-            return instance
+            return instace
         }
-
     }
-
 
 }

@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import br.senai.sp.jandira.gamesapp.NewAccountActivity
+//import br.senai.sp.jandira.gamesapp.NewAccountActivity
 import br.senai.sp.jandira.gamesapp.R
+import br.senai.sp.jandira.gamesapp.databinding.ActivityNewAccountBinding
 import br.senai.sp.jandira.gamesapp.model.Usuario
 
 class UserAdapter(var userList: List<Usuario>, var context: Context):
@@ -32,14 +33,14 @@ class UserAdapter(var userList: List<Usuario>, var context: Context):
     override fun onBindViewHolder(holder: UserHolder, position: Int) {
         val user = userList[position]
 
-        holder.textViewNome.text = user.nome
+        holder.textViewNome.text = user.name
         holder.textViewEmail.text = user.email
-        holder.textViewCidade.text = user.cidade
-        holder.textViewPassword.text = user.senha
-        holder.textViewDataNasc.text = user.dataNascimento.toString()
+        holder.textViewCidade.text = user.city
+        holder.textViewPassword.text = user.password
+        holder.textViewDataNasc.text = user.birthDate.toString()
 
         holder.cardViewGames.setOnClickListener {
-            val intent = Intent(context, NewAccountActivity::class.java)
+            val intent = Intent(context, ActivityNewAccountBinding::class.java)
             intent.putExtra("id", user.id)
             context.startActivity(intent)
         }

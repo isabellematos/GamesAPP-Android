@@ -15,4 +15,7 @@ import br.senai.sp.jandira.gamesapp.model.Usuario
 
         @Query("SELECT nome FROM tbl_console ORDER BY nome ASC")
         fun getAllConsoles(): List<String>
+
+       // @Query("SELECT * FROM tbl_console WHERE nome = :name AND password = :pass")
+        //fun authenticationUser(): List<String>
     }

@@ -13,14 +13,13 @@ class Usuario {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 
-    var nome = ""
-    var telefone = ""
+    var name = ""
     var email = ""
-    var senha = ""
-    var cidade = ""
-    var dataNascimento = ""
-    var nivel = NiveisEnum.INICIANTE
-    //var console = Console
+    var password = ""
+    var city = ""
+    var birthDate = ""
+    var level = NiveisEnum.INICIANTE
+    var console = ""
     //var foto: Drawable? = null
     var sex = 'I'
 

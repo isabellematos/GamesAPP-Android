@@ -226,6 +226,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
             <RadioGroup
+                android:id="@+id/radio_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -246,6 +247,20 @@
                     android:layout_margin="20dp"
                     android:text="@string/male" />
             </RadioGroup>
+
+            <TextView
+                android:id="@+id/enumLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/spinner"
+                app:layout_constraintTop_toTopOf="@+id/spinner"
+                tools:text="INICIANTE" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

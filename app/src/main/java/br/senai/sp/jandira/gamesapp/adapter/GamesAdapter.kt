@@ -26,11 +26,11 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
             val textTituloG = view.findViewById<TextView>(R.id.text_view_titulo)
             val textMarca = view.findViewById<TextView>(R.id.text_view_marca)
             val textDescricao = view.findViewById<TextView>(R.id.text_view_descricao)
-            val imageHolder = view.findViewById<ImageView>(R.id.image_holder)
+            //val imageHolder = view.findViewById<ImageView>(R.id.image_holder)
 
             fun bind(Games: Games) {
-                textTituloG.text = Games.nomeGame
-                textMarca.text = Games.marcaGame
+                textTituloG.text = Games.name
+                textMarca.text = Games.company
                 textDescricao.text = Games.descricao
               //  imageHolder.setImageDrawable(Games.imagem)
             }

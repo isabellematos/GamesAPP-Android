@@ -10,12 +10,11 @@ import java.time.LocalDate
 
 @Entity(tableName = "tbl_games")
 class Games {
-    @PrimaryKey(autoGenerate = true)
-    var codigo = 0
+    @PrimaryKey(autoGenerate = true) var id = 0
   //  var imagem: Drawable? = null
-    var nomeGame = ""
+    var name = ""
     var descricao = ""
-    var marcaGame = ""
+    var company = ""
     var anoLancamento = ""
     var finalizado: Boolean? = null
 
