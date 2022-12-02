@@ -43,4 +43,13 @@ interface GamesDao {
 
     @Query("SELECT * FROM tbl_user WHERE email = :email AND password = :pass")
     fun autenticarUser(email: String, pass: String): Usuario
+
+    @Query("SELECT * FROM tbl_user ORDER BY name ASC")
+    fun getAll(): List<Usuario>
+
+    @Query("SELECT * FROM tbl_user WHERE id = :id")
+    fun getUserById(id: Int): Usuario
+
+    @Query("SELECT nome FROM tbl_console ORDER BY nome ASC")
+    fun getAllConsoles(): List<String>
 }

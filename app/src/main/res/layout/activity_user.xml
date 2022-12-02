@@ -20,14 +20,11 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="37dp"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/roboto"
             android:text="@string/gamesfinished"
             android:textColor="#E3DF6E"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/text_view_gamesfinish_user"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
@@ -35,37 +32,36 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/roboto"
             android:text="@string/corrently"
             android:textColor="#E3DF6E"
             android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="70dp"
             android:fontFamily="@font/roboto"
             android:text="@string/age"
             android:textColor="#E3DF6E"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
         <TextView
             android:id="@+id/text_view_gamesfinish_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/text_view_currrent_play_user"
-            app:layout_constraintHorizontal_bias="0.525"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -75,28 +71,28 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_view_age_user"
+            app:layout_constraintStart_toEndOf="@+id/text_view_gamesfinish_user"
             app:layout_constraintTop_toBottomOf="@+id/textView9"
-            tools:layout_editor_absoluteX="176dp" />
+            app:layout_constraintVertical_bias="0.382" />
 
         <TextView
             android:id="@+id/text_view_age_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
             android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/text_view_currrent_play_user"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
-            android:layout_width="207dp"
+            android:layout_width="217dp"
             android:layout_height="61dp"
             android:background="@drawable/userdata_bg"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.491">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/view_nome_usuario"
@@ -114,6 +110,7 @@
                 android:id="@+id/text_view_email_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:text="TextView"
                 android:textColor="#1976D2"
                 app:layout_constraintBottom_toBottomOf="parent"

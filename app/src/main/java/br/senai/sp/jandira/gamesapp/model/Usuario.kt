@@ -10,6 +10,7 @@ import java.time.LocalDate
 @Entity(tableName = "tbl_user")
 class Usuario {
 
+
     @PrimaryKey(autoGenerate = true)
     var id = 0
 
@@ -18,9 +19,10 @@ class Usuario {
     var password = ""
     var city = ""
     var birthDate = ""
-    var level = NiveisEnum.INICIANTE
+    var level = NiveisEnum.INICIANTE.toString()
     var console = ""
     //var foto: Drawable? = null
     var sex = 'I'
+    var age = 0
 
 }

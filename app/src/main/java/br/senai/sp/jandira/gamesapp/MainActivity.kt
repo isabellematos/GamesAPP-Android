@@ -48,9 +48,12 @@ class MainActivity : AppCompatActivity() {
 
                 if(logar != null){
                     val openUserActivity = Intent(this, UserActivity::class.java)
+                    openUserActivity.putExtra("email", logar.email)
+                    openUserActivity.putExtra("nome", logar.name)
+                    openUserActivity.putExtra("level", logar.level)
                     startActivity(openUserActivity)
                 } else{
-                    Toast.makeText(this, "oi", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "login incorreto", Toast.LENGTH_SHORT).show()
                 }
             }
 

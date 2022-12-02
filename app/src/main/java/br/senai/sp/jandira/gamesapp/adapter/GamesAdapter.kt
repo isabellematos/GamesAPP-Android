@@ -9,13 +9,14 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.senai.sp.jandira.gamesapp.R
 import br.senai.sp.jandira.gamesapp.model.Games
+import br.senai.sp.jandira.gamesapp.model.Jogos
 
 
-class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.HolderGames>() {
+class GamesAdapter( val context: Context) : RecyclerView.Adapter<GamesAdapter.HolderGames>() {
 
-        private var gamesList = listOf<Games>()
+        private var gamesList = listOf<Jogos>()
 
-        fun updateGamesList(games: List<Games>) {
+        fun updateGamesList(games: List<Jogos>) {
             this.gamesList = games
             notifyDataSetChanged()
         }
@@ -26,13 +27,13 @@ class GamesAdapter(val context: Context) : RecyclerView.Adapter<GamesAdapter.Hol
             val textTituloG = view.findViewById<TextView>(R.id.text_view_titulo)
             val textMarca = view.findViewById<TextView>(R.id.text_view_marca)
             val textDescricao = view.findViewById<TextView>(R.id.text_view_descricao)
-            //val imageHolder = view.findViewById<ImageView>(R.id.image_holder)
+            val imageHolder = view.findViewById<ImageView>(R.id.image_holder)
 
-            fun bind(Games: Games) {
-                textTituloG.text = Games.name
-                textMarca.text = Games.company
-                textDescricao.text = Games.descricao
-              //  imageHolder.setImageDrawable(Games.imagem)
+            fun bind(games: Jogos) {
+                textTituloG.text = games.nomeGame
+                textMarca.text = games.marcaGame
+                textDescricao.text = games.descricao
+                imageHolder.setImageDrawable(games.imagem)
             }
 
 

@@ -7,16 +7,10 @@ import br.senai.sp.jandira.gamesapp.model.Usuario
 
 class UserRepository (context: Context){
 
-    //private val db = GamesDB.getDatabase(context).gamesDao(context)
+    private val db = GamesDB.getDatabase(context).gamesDao(context)
 
-
-   // fun getAll(): List<Usuario> {
-    //    return db.getAllConsole()
-  //  }
-
-   // fun getUserById(id: Int): Usuario {
-     //   return db.getUserById(id)
-    //}
-
+    fun getUser(email: String, senha:String): Usuario {
+        return db.autenticarUser(email, senha)
+    }
 
 }

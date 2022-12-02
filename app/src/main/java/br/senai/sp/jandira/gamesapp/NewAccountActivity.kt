@@ -77,6 +77,7 @@ class NewAccountActivity : AppCompatActivity() {
         user.password = binding.editTextPassword.text.toString()
         user.name = binding.editTextName.text.toString()
         user.city = binding.editTextCidade.text.toString()
+        user.level = binding.enumLevel.text.toString()
 
         val op = binding.radioGroup!!.checkedRadioButtonId
 
