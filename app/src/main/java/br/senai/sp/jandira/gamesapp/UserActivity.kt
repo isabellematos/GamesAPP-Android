@@ -42,7 +42,6 @@ class UserActivity : AppCompatActivity() {
        gamesRepository = GameRepository(this)
 
         adapter = GamesAdapter(this)
-        adapter.updateGamesList(gamesRepository.getAllGames())
 
 
         rvGames = findViewById(R.id.rv_games)
